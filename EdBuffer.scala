@@ -17,6 +17,9 @@ class EdBuffer {
     /** Current editing position. */
     private var _point = 0
 
+    /** Current mark position. */
+    private var _mark = 0
+
     /** Timestamp */
     private var _timestamp = 0
 
@@ -91,6 +94,12 @@ class EdBuffer {
         if (damage == EdBuffer.REWRITE_LINE && getRow(point) != damage_line)
             damage = EdBuffer.REWRITE
         _point = point
+    }
+
+    def mark = _mark
+
+    def mark_=(mark: Int) {
+        _mark = mark
     }
     
     def timestamp = _timestamp
@@ -256,10 +265,11 @@ class EdBuffer {
      * is recorded consists of just the current point. */
     class Memento {
         private val pt = point
+        private val mk = mark
 	      private val time = timestamp
         private val isMod = modified
         /** Restore the state when the memento was created */
-        def restore() { point = pt; timestamp = time; setModified(isMod);}
+        def restore() { point = pt; mark = mk; timestamp = time; setModified(isMod);}
     }
 
     /** Change that records an insertion */

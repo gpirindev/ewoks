@@ -36,6 +36,18 @@ class Editor extends Undoable[Editor.Action] {
     /** Load a file into the buffer */
     def loadFile(fname: String) { ed.loadFile(fname) }
 
+    /** Command: Place the mark */
+    def placeMark(): Unit = {
+        ed.mark = ed.point
+    }
+
+    /** Command: Swap the mark and the point*/
+    def swapMarkPoint(): Unit = {
+        val temp = ed.mark
+        ed.mark = ed.point
+        ed.point = temp
+    }
+
     /** Command: Move the cursor in the specified direction */
     def moveCommand(dir: Int) {
         var p = ed.point
@@ -77,6 +89,7 @@ class Editor extends Undoable[Editor.Action] {
         val time = ed.timestamp
         ed.insert(p, ch)
         ed.point = p+1
+        if(ed.mark >= p) ed.mark = ed.mark + 1
         new ed.AmalgInsertion(p, ch, time)
     }
     
@@ -93,6 +106,7 @@ class Editor extends Undoable[Editor.Action] {
     /** Command: Delete in a specified direction */
     def deleteCommand(dir: Int): Change = {
         var p = ed.point
+        var mk = ed.mark
         var ch: Char = 0
 
         dir match {
@@ -102,10 +116,12 @@ class Editor extends Undoable[Editor.Action] {
                 ch = ed.charAt(p)
                 ed.deleteChar(p)
                 ed.point = p
+                if(mk >= p) ed.mark = mk - 1
             case Editor.RIGHT =>
                 if (p == ed.length) { beep(); return null }
                 ch = ed.charAt(p)
                 ed.deleteChar(p)
+                if(mk > p) ed.mark = mk - 1
             case Editor.END =>
                 if (p == ed.length) { beep(); return null }
                 if (ed.charAt(p) == '\n') {
@@ -212,7 +228,7 @@ class Editor extends Undoable[Editor.Action] {
         while (alive) {
             val key = display.getKey()
             Editor.keymap.find(key) match {
-                case Some(cmd) => {System.out.println(ed.timestamp + " , " + ed.isModified); perform(cmd)}
+                case Some(cmd) => {System.out.println(ed.mark); perform(cmd)}
                 case None => beep()
             }
         }
@@ -287,7 +303,9 @@ object Editor {
         Display.ctrl('G') -> (_.beep),
         Display.ctrl('K') -> (_.deleteCommand(END)),
         Display.ctrl('L') -> (_.chooseOrigin),
+        Display.ctrl('M') -> (_.placeMark),
         Display.ctrl('N') -> (_.moveCommand(DOWN)),
+        Display.ctrl('O') -> (_.swapMarkPoint),
         Display.ctrl('P') -> (_.moveCommand(UP)),
         Display.ctrl('Q') -> (_.quit),
         Display.ctrl('R') -> (_.replaceFileCommand),

@@ -6,5 +6,5 @@ slabo mqsto
 a
 bcde
 aabcd
-a
+aa
 avan
