@@ -1,55 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a1eecff6-2640-4419-86f8-3579b48086e4" name="Default" comment="Q9 completed">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$AmalgInsertion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$AmalgInsertion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Deletion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Deletion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$EditorChange.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$EditorChange.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Insertion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Insertion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Memento.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Memento.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Save.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Save.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Transposition.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Transposition.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer.class" afterPath="$PROJECT_DIR$/bin/EdBuffer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$1$$anonfun$apply$mcVI$sp$1.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$1$$anonfun$apply$mcVI$sp$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$1.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$10.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$10.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$11.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$11.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$12.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$12.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$13.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$13.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$14.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$14.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$15.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$15.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$16.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$16.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$17.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$17.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$18.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$18.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$19.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$19.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$2.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$20.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$20.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$21.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$21.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$22.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$22.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$23.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$23.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$24.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$24.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$25.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$25.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$26.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$26.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$27.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$27.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$28.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$28.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$29.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$29.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$3.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$30.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$30.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$31.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$31.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$4.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$5.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$6.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$7.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$8.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$9.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$.class" afterPath="$PROJECT_DIR$/bin/Editor$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor.class" afterPath="$PROJECT_DIR$/bin/Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="a1eecff6-2640-4419-86f8-3579b48086e4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EdBuffer.scala" afterPath="$PROJECT_DIR$/EdBuffer.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor.scala" afterPath="$PROJECT_DIR$/Editor.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/file.txt" afterPath="$PROJECT_DIR$/file.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -439,6 +392,14 @@
       <option name="presentableId" value="Default" />
       <updated>1483390626791</updated>
     </task>
+    <task id="LOCAL-00001" summary="Q7 completed">
+      <created>1483474613781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1483474613781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -479,7 +440,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Q9 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Q9 completed" />
+    <MESSAGE value="Q7 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Q7 completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
