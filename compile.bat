@@ -1,0 +1,1 @@
+scalac -d bin Undoable.scala Text.scala PlaneText.scala Terminal.scala Keymap.scala Display.scala EdBuffer.scala MiniBuffer.scala Editor.scala Testbed.scala

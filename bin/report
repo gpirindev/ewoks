@@ -1,0 +1,182 @@
+1. CTRLHOME and CTRLEND :
+
+//Ctrl + HOME moves to the top row (0) and the first positition (0) in the PlaneText Object ed
+//Ctrl + END moves to the last row (ed.numLines-1) and the last positition (ed.getLineLength(ed.numLines-1)-1) in the PlaneText Object ed
+
+case Editor.CTRLHOME =>
+  p = ed.getPos(0, 0)
+case Editor.CTRLEND =>
+  p = ed.getPos(ed.numLines-1, ed.getLineLength(ed.numLines-1)-1)
+
+//Directions for use as argument to moveCommand or deleteCommand
+val CTRLHOME = 9
+val CTRLEND = 10
+
+//Add the options to the Keymap
+Display.CTRLHOME -> (_.moveCommand(CTRLHOME)),
+Display.CTRLEND -> (_.moveCommand(CTRLEND)),
+
+2.Transpositions
+
+We need to create a new Command in the Editor file, and in the EdBuffer file - a new function transpose that does the transposition and a new Change that records it.
+
+in Editor: 
+Add ctrl+t to the keymap:
+
+Display.ctrl('T') -> (_.transposeCommand)
+
+/** Command: Transpose the characters to the left and right of the cursor */
+    def transposeCommand(): Change = {
+        val p = ed.point
+        if (ed.getColumn(p) == 0 || p == ed.length) { beep(); return null }
+        ed.transpose(p)
+        ed.point = p+1
+        if (ed.charAt(p) == '\n') { ed.point += 1}
+        new ed.Transposition(p)
+    }
+
+in EdBuffer:
+
+A new function
+/** Transpose. */
+    def transpose(pos: Int) {
+        noteDamage(true)
+        //not at the beginning of the line, not at the end of the text
+        if(getColumn(pos) != 0 && pos + 1< length){
+          //at the middle of the line
+          if(charAt(pos) != '\n') {
+            var t = charAt(pos);
+            insert(pos-1, t);
+            deleteChar(pos+1);
+          }
+          //at the end of the line
+          else if(charAt(pos) == '\n') {
+            //next line is not empty
+            if(pos + 2 < length && charAt(pos+1) != '\n'){
+              var t = charAt(pos-1);
+              insert(pos-1, charAt(pos+1));
+              deleteChar(pos);
+              deleteChar(pos+1);
+              insert(pos+1, t);
+            }
+            //next line is empty
+            else {
+              var t = charAt(pos-1);
+              deleteChar(pos-1);
+              insert(pos, t);
+            }
+          }
+        }
+        setModified()
+    }
+
+A new Change
+
+/** Change that records transposition */
+    class Transposition(pos: Int) extends Change {
+        def undo() { transpose(pos) }
+        def redo() { transpose(pos) }
+    }
+
+3.Delete with ctrl+K
+
+First, we need to add END to the range of values accepted by Editor.deleteCommand
+
+case Editor.END =>
+  if (p == ed.length) { beep(); return null }
+  //if we are at the end of the line
+  if (ed.charAt(p) == '\n') {
+    ch = ed.charAt(p)
+    ed.deleteChar(p)
+  }
+  //if we are not in the end of the line
+  else {
+     var range = ed.getRange(p, ed.getLineLength(ed.getRow(p)) - ed.getColumn(p) - 1)
+     ed.deleteRange(p, ed.getLineLength(ed.getRow(p)) - ed.getColumn(p) - 1)
+     return new ed.Deletion(p, range)
+  }
+
+Then, we need to generalize Deletion, so it accepts either a single character or a 
+range of characters as Text.Immutable
+
+/** Change that records a deletion */
+    class Deletion(pos: Int, deleted: Any) extends Change {
+      def undo() { deleted match {
+        case _: Char => insert(pos, deleted.asInstanceOf[Char])
+        case _: Text.Immutable => insert(pos, deleted.asInstanceOf[Text.Immutable])
+        }
+      }
+      def redo() { deleted match {
+        case _: Char => deleteChar(pos)
+        case _: Text.Immutable => deleteRange(pos, deleted.asInstanceOf[Text.Immutable].length)
+          } 
+      }
+    }
+
+4.Alternative Scrolling Policy
+
+Currently, when performing a change, we check whether the current row is in the visible part
+of the display and if it is not, refresh the display trying to set it in the middle.
+The alternative is to check whether the current row is in the centre of the display
+and if it is not - refresh the display. Therefore we only need to change the condition in
+checkScroll
+
+private def checkScroll() {
+  if (origin != row - LINES/2)
+  chooseOrigin()
+  ...
+}
+
+5. Search
+
+In Editor.scala, we add a Search Command and bind it to the keymap. We alsoo add a
+string variable to keep the last searched word
+
+/** The last searched word */
+    var lastSearched = ""
+
+/** Search for a word */
+    def searchCommand() {
+        var p = ed.point
+        val elem = MiniBuffer.readString(display, "Search", lastSearched)
+        if (elem != null && elem.length > 0) {
+          lastSearched = elem
+          var index = ed.search(elem, p)
+          if(index > 0) ed.point = index
+          else beep();
+        }        
+    }
+
+Display.ctrl('S') -> (_.searchCommand())
+
+In EdBuffer.scala we add a search method
+
+/** Search for a string */
+    def search(elem : String, pos: Int): Int = {
+        var from = pos
+        var piece = elem
+        var index = text.indexOf(piece, from)
+        noteDamage(index != -1)
+        return index
+    }
+
+It calss a indexOf method from the PlaneText class, inherited from the Text class that searches for a string after a certain position and returns the position of the last character of the first repetition of the string if there are any and -1 otherwise
+
+/** Finds the first occurrence of some value after some index */
+    def indexOf(str: String, from: Int): Int = {
+        assert(from >=0 && from < len)
+        val start = from
+        var i = (start + 1) % len
+        while(i < len - str.length()) {
+          if (getString(i, str.length()) == str) return i + str.length()
+          i += 1
+        }
+        i = 0
+        while(i < start) {
+          if (getString(i, str.length()) == str) return i + str.length()
+          i += 1
+        }
+        return -1
+    }
+
+

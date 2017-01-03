@@ -1,0 +1,222 @@
+Change after (9) in EdBuffer:
+Comparing files EdBufferInit.scala and EDBUFFER9.SCALA
+***** EdBufferInit.scala
+
+    // State components that are not restored on undo
+***** EDBUFFER9.SCALA
+
+    /** Timestamp */
+    private var _timestamp = 0
+
+    // State components that are not restored on undo
+*****
+
+***** EdBufferInit.scala
+
+
+***** EDBUFFER9.SCALA
+
+    /** Time of last save */
+    private var lastSave = 0
+
+    /** At save time */
+    def atSave() = {lastSave == timestamp}
+
+
+*****
+
+***** EdBufferInit.scala
+
+    /** Test whether the text is modified */
+***** EDBUFFER9.SCALA
+
+    /** Mark the buffer as modified or not*/
+    private def setModified(isMod: Boolean) { modified = isMod }
+
+    /** Test whether the text is modified */
+*****
+
+***** EdBufferInit.scala
+    }
+
+***** EDBUFFER9.SCALA
+    }
+
+    def timestamp = _timestamp
+
+    def timestamp_=(timestamp: Int) { _timestamp = timestamp}
+
+*****
+
+***** EdBufferInit.scala
+        text.deleteChar(pos)
+        setModified()
+***** EDBUFFER9.SCALA
+        text.deleteChar(pos)
+        timestamp = timestamp + 1
+        setModified()
+*****
+
+***** EdBufferInit.scala
+        text.deleteRange(pos, len)
+        setModified()
+***** EDBUFFER9.SCALA
+        text.deleteRange(pos, len)
+        timestamp = timestamp + 1
+        setModified()
+*****
+
+***** EdBufferInit.scala
+        text.insert(pos, ch)
+        setModified()
+***** EDBUFFER9.SCALA
+        text.insert(pos, ch)
+        timestamp = timestamp + 1
+        setModified()
+*****
+
+    /** Make a Memento that records the current editing state */
+***** EDBUFFER9.SCALA
+
+    /** Make a Memento that records the current editing state */
+*****
+
+***** EdBufferInit.scala
+        private val pt = point
+
+        /** Restore the state when the memento was created */
+        def restore() { point = pt }
+    }
+***** EDBUFFER9.SCALA
+        private val pt = point
+        private val time = timestamp
+        private val isMod = modified
+        /** Restore the state when the memento was created */
+        def restore() { point = pt; timestamp = time; setModified(isMod);}
+    }
+*****
+
+***** EdBufferInit.scala
+        def redo() { insert(pos, text) }
+    }
+***** EDBUFFER9.SCALA
+        def redo() { insert(pos, text) }
+        override def amalgamate(change: Change) = {
+            change match {
+                case other: Save => true
+                case _ => false
+            }
+        }
+    }
+*****
+
+***** EdBufferInit.scala
+    /** Insertion that can be amalgamated with adjacent, similar changes */
+    class AmalgInsertion(val pos: Int, ch: Char) extends Change {
+        /** The text inserted by all commands that have merged with this one */
+***** EDBUFFER9.SCALA
+    /** Insertion that can be amalgamated with adjacent, similar changes */
+    class AmalgInsertion(val pos: Int, ch: Char, val time: Int) extends Change {
+        /** The text inserted by all commands that have merged with this one */
+*****
+
+***** EdBufferInit.scala
+            change match {
+                case other: AmalgInsertion =>
+***** EDBUFFER9.SCALA
+            change match {
+                case other: Save => true
+                case other: AmalgInsertion =>
+*****
+
+***** EdBufferInit.scala
+                    if (text.charAt(text.length-1) == '\n'
+                            || other.pos != this.pos + this.text.length)
+                        false
+***** EDBUFFER9.SCALA
+                    if (text.charAt(text.length-1) == '\n'
+                            || other.pos != this.pos + this.text.length || (this.time < lastSave && this.time + this.text.lengt
+h >= lastSave))
+                        false
+*****
+
+***** EdBufferInit.scala
+
+***** EDBUFFER9.SCALA
+        override def amalgamate(change: Change) = {
+            change match {
+                case other: Save => true
+                case _ => false
+            }
+        }
+    }
+
+*****
+
+    }
+***** EDBUFFER9.SCALA
+
+    /** Change that records saving */
+    class Save() extends Change {
+        def undo() {}
+        def redo() {}
+        override def amalgamate(change: Change) = {
+            change match {
+                case other: Save => true
+                case _ => false
+            }
+        }
+    }
+*****
+
+Change after (9) in Editor:
+
+Comparing files EditorInit.scala and EDITOR9.SCALA
+***** EditorInit.scala
+    def checkClean(action: String) = {
+        if (! ed.isModified)
+            true
+***** EDITOR9.SCALA
+    def checkClean(action: String) = {
+        if (!ed.isModified && ed.atSave())
+            true
+*****
+
+***** EditorInit.scala
+        val p = ed.point
+        ed.insert(p, ch)
+***** EDITOR9.SCALA
+        val p = ed.point
+        val time = ed.timestamp
+        ed.insert(p, ch)
+*****
+
+***** EditorInit.scala
+        ed.point = p+1
+        new ed.AmalgInsertion(p, ch)
+    }
+
+***** EDITOR9.SCALA
+        ed.point = p+1
+        new ed.AmalgInsertion(p, ch, time)
+    }
+
+***** EditorInit.scala
+    /** Command: Save the file */
+    def saveFileCommand() {
+        val name =
+***** EDITOR9.SCALA
+    /** Command: Save the file */
+    def saveFileCommand(): Change = {
+        val name =
+*****
+
+***** EditorInit.scala
+            ed.saveFile(name)
+    }
+***** EDITOR9.SCALA
+            ed.saveFile(name)
+        if (ed.timestamp > 0) return new ed.Save()
+        return null
+    }
+*****
