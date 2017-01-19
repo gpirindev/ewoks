@@ -229,6 +229,11 @@ object Text {
         def subSequence(start: Int, end: Int) =
             contents.subSequence(start, end)
 
+        override def toString(): String = {
+            var s = "";
+            for(i<- 0 until length) s = s + charAt(i)
+            return s
+        }
         override def equals(that: Any) = {
             that match {
                 case other: Immutable => contents.equals(other.contents)

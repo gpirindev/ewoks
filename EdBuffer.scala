@@ -133,6 +133,34 @@ class EdBuffer {
 
     def writeFile(out: Writer) { text.writeFile(out) }
 
+    /**A letter or a number at this position*/
+    def letterOrNum(pos: Int) :Boolean = {
+        val ch = charAt(pos).toInt
+        if((48<=ch && ch<58)||(65<=ch && ch<91)||(97<=ch && ch<123)) return true
+        return false
+    }
+
+    /** Starting position of the word the cursor is at */
+    def startOfWord(pos: Int): Int = {
+        if(pos == 0) return 0
+        var st = pos - 1
+        while(st != 0 && letterOrNum(st)) st-=1
+        if(st == 0 && letterOrNum(st)) return 0
+        return st+1
+    }
+
+    /** Length of the word the cursor is at */
+    def lengthOfWord(pos: Int): Int = {
+        return endOfWord(pos) - startOfWord(pos) + 1
+    }
+
+    /** Ending position of the word the cursor is at */
+    def endOfWord(pos: Int): Int = {
+        if(pos == length - 1) return length - 1
+        var st = pos + 1
+        while(st != length && letterOrNum(st)) st+=1
+        return st-1
+    }
 
     // Mutator methods
 
@@ -179,6 +207,16 @@ class EdBuffer {
     def insert(pos: Int, t: Text) {
         noteDamage(true)
         text.insert(pos, t)
+        setModified()
+    }
+
+    /** Replace a Text. */
+    def replace(pos: Int, s: String) {
+        noteDamage(true)
+        val len = s.length
+        text.deleteRange(pos, len)
+        text.insert(pos, s)
+        timestamp = timestamp + 1
         setModified()
     }
     
@@ -324,6 +362,21 @@ class EdBuffer {
         }
         override def amalgamate(change: Change) = {
             change match {
+                case other: Save => true
+                case _ => false
+            }
+        }
+    }
+
+    /** Change that records word replacement */
+    class Replacement(val start: Int, s: String) extends Change {
+        def undo() { replace(start, s) }
+        def redo() { replace(start, s.toUpperCase)}
+        override def amalgamate(change: Change) = {
+            change match {
+                case other: Replacement =>
+                    if(this.start == other.start) true
+                    else false
                 case other: Save => true
                 case _ => false
             }

@@ -2,7 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1eecff6-2640-4419-86f8-3579b48086e4" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$AmalgInsertion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$AmalgInsertion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Deletion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Deletion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$EditorChange.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$EditorChange.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Insertion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Insertion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Memento.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Memento.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Save.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Save.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Transposition.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Transposition.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer.class" afterPath="$PROJECT_DIR$/bin/EdBuffer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$1$$anonfun$apply$mcVI$sp$1.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$1$$anonfun$apply$mcVI$sp$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$1.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$10.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$10.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$11.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$11.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$12.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$12.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$13.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$13.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$14.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$14.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$15.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$15.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$16.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$16.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$17.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$17.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$18.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$18.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$19.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$19.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$2.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$20.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$20.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$21.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$21.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$22.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$22.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$23.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$23.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$24.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$24.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$25.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$25.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$26.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$26.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$27.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$27.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$28.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$28.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$29.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$29.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$3.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$30.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$30.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$31.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$31.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$32.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$32.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$33.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$33.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$4.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$5.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$6.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$7.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$7.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$8.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$8.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$9.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$9.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$.class" afterPath="$PROJECT_DIR$/bin/Editor$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor.class" afterPath="$PROJECT_DIR$/bin/Editor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Text$.class" afterPath="$PROJECT_DIR$/bin/Text$.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Text$Immutable.class" afterPath="$PROJECT_DIR$/bin/Text$Immutable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Text.class" afterPath="$PROJECT_DIR$/bin/Text.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EdBuffer.scala" afterPath="$PROJECT_DIR$/EdBuffer.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor.scala" afterPath="$PROJECT_DIR$/Editor.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectReport.txt" afterPath="$PROJECT_DIR$/ProjectReport.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Text.scala" afterPath="$PROJECT_DIR$/Text.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,21 +70,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Editor.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Editor.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Editor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="128" column="34" lean-forward="true" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EdBuffer.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+            <state relative-caret-position="96">
+              <caret line="230" column="5" lean-forward="false" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -41,18 +83,28 @@
       <file leaf-file-name="Undoable.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Undoable.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-778">
-              <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="297">
+              <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProjectReport.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <file leaf-file-name="EdBuffer.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="203" column="22" lean-forward="false" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
+            <state relative-caret-position="-3400">
+              <caret line="162" column="5" lean-forward="false" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Text.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Text.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -74,16 +126,18 @@
         <option value="$PROJECT_DIR$/compile.bat" />
         <option value="$PROJECT_DIR$/run.bat" />
         <option value="$PROJECT_DIR$/ProjectReport.txt" />
-        <option value="$PROJECT_DIR$/EdBuffer.scala" />
+        <option value="$PROJECT_DIR$/Text.scala" />
+        <option value="$PROJECT_DIR$/Undoable.scala" />
         <option value="$PROJECT_DIR$/Editor.scala" />
+        <option value="$PROJECT_DIR$/EdBuffer.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-5" />
-    <option name="y" value="16" />
-    <option name="width" value="1346" />
-    <option name="height" value="676" />
+    <option name="x" value="-23" />
+    <option name="y" value="36" />
+    <option name="width" value="1356" />
+    <option name="height" value="675" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -101,8 +155,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -117,7 +172,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -125,7 +179,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Scala Console.Scala Console">
+    <configuration default="false" name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -209,6 +270,16 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
@@ -302,6 +373,13 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console">
+      <module name="" />
+      <setting name="vmparams4" value="-Djline.terminal=NONE" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="consoleArgs" value="-usejavacp" />
+      <method />
+    </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -314,6 +392,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
@@ -329,6 +409,8 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
@@ -372,9 +454,19 @@
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
+      <classRegexps />
+      <testRegexps />
       <envs />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Scala Console.Scala Console" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
@@ -383,6 +475,9 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -403,7 +498,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="16" width="1346" height="676" extended-state="0" />
+    <frame x="-23" y="36" width="1356" height="675" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -414,23 +509,24 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24962406" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16641791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -444,7 +540,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Q7 completed" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -452,6 +550,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Editor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6477">
+          <caret line="381" column="40" lean-forward="false" selection-start-line="381" selection-start-column="40" selection-end-line="381" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3740">
+          <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Editor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="34" lean-forward="false" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Undoable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Editor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="34" lean-forward="false" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Undoable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Editor.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -472,7 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="4" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -480,23 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="29" lean-forward="false" selection-start-line="0" selection-start-column="29" selection-end-line="0" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="203" column="22" lean-forward="false" selection-start-line="203" selection-start-column="22" selection-end-line="203" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Undoable.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-778">
-          <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -504,22 +670,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="301" column="34" lean-forward="true" selection-start-line="301" selection-start-column="34" selection-end-line="301" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneText.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+    <entry file="file://$PROJECT_DIR$/Undoable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
+        <state relative-caret-position="297">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Editor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="128" column="34" lean-forward="true" selection-start-line="128" selection-start-column="34" selection-end-line="128" selection-end-column="34" />
+        <state relative-caret-position="96">
+          <caret line="230" column="5" lean-forward="false" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3400">
+          <caret line="162" column="5" lean-forward="false" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
           <folding />
         </state>
       </provider>

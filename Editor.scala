@@ -139,6 +139,18 @@ class Editor extends Undoable[Editor.Action] {
 
         new ed.Deletion(p, ch)
     }
+
+    /** Uppercase the letter in the word at the current position*/
+    def uppercaseCommand(): Change = {
+        var p = ed.point
+        if(p == ed.length || !ed.letterOrNum(p)) { beep(); return null }
+        var start = ed.startOfWord(p)
+        var len = ed.lengthOfWord(p)
+        var range = ed.getRange(start, len).toString()
+        ed.replace(start, range.toUpperCase)
+        new ed.Replacement(start, range)
+    }
+
     /** The last searched word */
     var lastSearched = ""
     
@@ -228,7 +240,7 @@ class Editor extends Undoable[Editor.Action] {
         while (alive) {
             val key = display.getKey()
             Editor.keymap.find(key) match {
-                case Some(cmd) => {System.out.println(ed.mark); perform(cmd)}
+                case Some(cmd) => { perform(cmd)}
                 case None => beep()
             }
         }
@@ -311,6 +323,7 @@ object Editor {
         Display.ctrl('R') -> (_.replaceFileCommand),
         Display.ctrl('S') -> (_.searchCommand()),
         Display.ctrl('T') -> (_.transposeCommand),
+        Display.ctrl('U') -> (_.uppercaseCommand),
         Display.ctrl('W') -> (_.saveFileCommand),
         Display.ctrl('Y') -> (_.redo),
         Display.ctrl('Z') -> (_.undo))
