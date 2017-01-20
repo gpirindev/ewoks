@@ -140,7 +140,7 @@ class Editor extends Undoable[Editor.Action] {
         new ed.Deletion(p, ch)
     }
 
-    /** Uppercase the letter in the word at the current position*/
+    /** Uppercase the word at the current position*/
     def uppercaseCommand(): Change = {
         var p = ed.point
         if(p == ed.length || !ed.letterOrNum(p)) { beep(); return null }
@@ -149,6 +149,16 @@ class Editor extends Undoable[Editor.Action] {
         var range = ed.getRange(start, len).toString()
         ed.replace(start, range.toUpperCase)
         new ed.Replacement(start, range)
+    }
+
+    /** Encrypt the text between the point and the marker*/
+    def encryptCommand(): Unit = {
+        var p = ed.point
+        var m = ed.mark
+        if(p != ed.length && m != ed.length) {
+            val (fst, snd) = if (p < m) (p,m) else (m,p)
+            ed.encrypt(fst, snd)
+        }
     }
 
     /** The last searched word */
@@ -313,6 +323,7 @@ object Editor {
         Display.ctrl('E') -> (_.moveCommand(END)),
         Display.ctrl('F') -> (_.moveCommand(RIGHT)),
         Display.ctrl('G') -> (_.beep),
+        Display.ctrl('H') -> (_.encryptCommand),
         Display.ctrl('K') -> (_.deleteCommand(END)),
         Display.ctrl('L') -> (_.chooseOrigin),
         Display.ctrl('M') -> (_.placeMark),

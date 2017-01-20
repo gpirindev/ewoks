@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1eecff6-2640-4419-86f8-3579b48086e4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Immutables.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$AmalgInsertion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$AmalgInsertion.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/EdBuffer$Deletion.class" afterPath="$PROJECT_DIR$/bin/EdBuffer$Deletion.class" />
@@ -47,14 +48,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$$anonfun$9.class" afterPath="$PROJECT_DIR$/bin/Editor$$anonfun$9.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor$.class" afterPath="$PROJECT_DIR$/bin/Editor$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Editor.class" afterPath="$PROJECT_DIR$/bin/Editor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Text$.class" afterPath="$PROJECT_DIR$/bin/Text$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Text$Immutable.class" afterPath="$PROJECT_DIR$/bin/Text$Immutable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/Text.class" afterPath="$PROJECT_DIR$/bin/Text.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EdBuffer.scala" afterPath="$PROJECT_DIR$/EdBuffer.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Editor.scala" afterPath="$PROJECT_DIR$/Editor.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectReport.txt" afterPath="$PROJECT_DIR$/ProjectReport.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Text.scala" afterPath="$PROJECT_DIR$/Text.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compile.bat" afterPath="$PROJECT_DIR$/compile.bat" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,18 +71,8 @@
       <file leaf-file-name="Editor.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Editor.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="230" column="5" lean-forward="false" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Undoable.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Undoable.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+            <state relative-caret-position="194">
+              <caret line="160" column="9" lean-forward="false" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -93,19 +81,54 @@
       <file leaf-file-name="EdBuffer.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3400">
-              <caret line="162" column="5" lean-forward="false" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
+            <state relative-caret-position="339">
+              <caret line="187" column="24" lean-forward="false" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="24" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#54#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compile.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/compile.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Text.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Text.scala">
+      <file leaf-file-name="ProjectReport.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
+            <state relative-caret-position="5355">
+              <caret line="315" column="49" lean-forward="false" selection-start-line="315" selection-start-column="49" selection-end-line="315" selection-end-column="49" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Immutables.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Immutables.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="850">
+              <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tester.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tester.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+              <folding>
+                <element signature="n#rotify#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,19 +146,22 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/compile.bat" />
         <option value="$PROJECT_DIR$/run.bat" />
-        <option value="$PROJECT_DIR$/ProjectReport.txt" />
         <option value="$PROJECT_DIR$/Text.scala" />
         <option value="$PROJECT_DIR$/Undoable.scala" />
+        <option value="$PROJECT_DIR$/ProjectReport.txt" />
+        <option value="$PROJECT_DIR$/Mutables.scala" />
+        <option value="$PROJECT_DIR$/Immutables.scala" />
+        <option value="$PROJECT_DIR$/tester.scala" />
         <option value="$PROJECT_DIR$/Editor.scala" />
+        <option value="$PROJECT_DIR$/compile.bat" />
         <option value="$PROJECT_DIR$/EdBuffer.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-23" />
-    <option name="y" value="36" />
+    <option name="x" value="13" />
+    <option name="y" value="22" />
     <option name="width" value="1356" />
     <option name="height" value="675" />
   </component>
@@ -155,9 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,6 +196,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -494,11 +520,18 @@
       <option name="project" value="LOCAL" />
       <updated>1483474613781</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Q alpha completed">
+      <created>1484851577301</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1484851577301</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-23" y="36" width="1356" height="675" extended-state="0" />
+    <frame x="13" y="22" width="1356" height="675" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -510,7 +543,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871974" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32920355" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -537,7 +570,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Q9 completed" />
     <MESSAGE value="Q7 completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Q7 completed" />
+    <MESSAGE value="Q alpha completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Q alpha completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -558,11 +592,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Undoable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6375">
+          <caret line="375" column="26" lean-forward="false" selection-start-line="375" selection-start-column="26" selection-end-line="375" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5355">
+          <caret line="315" column="49" lean-forward="false" selection-start-line="315" selection-start-column="49" selection-end-line="315" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3723">
+          <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Editor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="142" column="40" lean-forward="false" selection-start-line="142" selection-start-column="40" selection-end-line="142" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Undoable.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6375">
+          <caret line="375" column="26" lean-forward="false" selection-start-line="375" selection-start-column="26" selection-end-line="375" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Text.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3723">
+          <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Editor.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6477">
           <caret line="381" column="40" lean-forward="false" selection-start-line="381" selection-start-column="40" selection-end-line="381" selection-end-column="40" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -586,7 +709,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -602,6 +728,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -617,7 +744,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -633,6 +763,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,7 +779,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2754">
           <caret line="162" column="5" lean-forward="false" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -666,20 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compile.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="301" column="34" lean-forward="true" selection-start-line="301" selection-start-column="34" selection-end-line="301" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlaneText.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -687,9 +807,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ProjectReport.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5355">
+          <caret line="315" column="49" lean-forward="false" selection-start-line="315" selection-start-column="49" selection-end-line="315" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Text.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="264">
           <caret line="220" column="40" lean-forward="false" selection-start-line="220" selection-start-column="40" selection-end-line="220" selection-end-column="40" />
           <folding />
         </state>
@@ -697,25 +825,54 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Undoable.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="17">
           <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tester.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding>
+            <element signature="n#rotify#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Immutables.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="1" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compile.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="73" lean-forward="false" selection-start-line="0" selection-start-column="73" selection-end-line="0" selection-end-column="73" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Editor.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="230" column="5" lean-forward="false" selection-start-line="230" selection-start-column="5" selection-end-line="230" selection-end-column="5" />
+        <state relative-caret-position="194">
+          <caret line="160" column="9" lean-forward="false" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EdBuffer.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3400">
-          <caret line="162" column="5" lean-forward="false" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="339">
+          <caret line="187" column="24" lean-forward="false" selection-start-line="187" selection-start-column="24" selection-end-line="187" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#54#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

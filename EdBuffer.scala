@@ -11,7 +11,10 @@ class EdBuffer {
 
     /** The display. */
     private var display: Display = null
-    
+
+    /** The immutable blocks */
+    var blocks = new Immutables
+
     // State components that are preserver by undo and redo
 
     /** Current editing position. */
@@ -162,7 +165,30 @@ class EdBuffer {
         return st-1
     }
 
+    /** Convert a character using ROT-13*/
+    def rotify(ch: Char): Char = {
+        if('a' <= ch && ch <='z') return (97 + (ch.toInt -97 + 13)%26).toChar
+        if('A' <= ch && ch <='Z') return (65 + (ch.toInt -65 + 13)%26).toChar
+        return ch
+    }
+
     // Mutator methods
+    /** Replace a character in the text using ROT-13*/
+    def rotifyChar(pos: Int): Unit = {
+        val ch = text.charAt(pos)
+        val rot = rotify(ch)
+        if(ch != rot) {
+            text.deleteChar(pos)
+            text.insert(pos, rot)
+        }
+    }
+
+    /** Encrypt a range */
+    def encrypt(from: Int, to: Int): Unit = {
+        noteDamage(true)
+        for(i<- from to to) rotifyChar(i)
+        setModified()
+    }
 
     /** Delete a character */
     def deleteChar(pos: Int) {
