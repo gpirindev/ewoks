@@ -86,6 +86,7 @@ class Editor extends Undoable[Editor.Action] {
     /** Command: Insert a character */
     def insertCommand(ch: Char): Change = {
         val p = ed.point
+        if(p!=0 && p!= ed.length && ed.blocks.findBlock(p) != (-1,-1) && ed.blocks.findBlock(p-1) == ed.blocks.findBlock(p)) {beep(); return null}
         val time = ed.timestamp
         ed.insert(p, ch)
         ed.point = p+1
@@ -111,14 +112,14 @@ class Editor extends Undoable[Editor.Action] {
 
         dir match {
             case Editor.LEFT =>
-                if (p == 0) { beep(); return null }
+                if (p == 0 || ed.blocks.findBlock(p-1) != (-1,-1)) { beep(); return null }
                 p -= 1
                 ch = ed.charAt(p)
                 ed.deleteChar(p)
                 ed.point = p
                 if(mk >= p) ed.mark = mk - 1
             case Editor.RIGHT =>
-                if (p == ed.length) { beep(); return null }
+                if (p == ed.length || ed.blocks.findBlock(p) != (-1,-1)) { beep(); return null }
                 ch = ed.charAt(p)
                 ed.deleteChar(p)
                 if(mk > p) ed.mark = mk - 1
@@ -151,13 +152,34 @@ class Editor extends Undoable[Editor.Action] {
         new ed.Replacement(start, range)
     }
 
-    /** Encrypt the text between the point and the marker*/
-    def encryptCommand(): Unit = {
+    /** Encrypt/decrypt the text between the point and the marker*/
+    def encryptCommand(): Change = {
         var p = ed.point
         var m = ed.mark
-        if(p != ed.length && m != ed.length) {
-            val (fst, snd) = if (p < m) (p,m) else (m,p)
+        //marker is at end of text => beep
+        if(m == ed.length || p == ed.length) {beep(); return null}
+        var block = ed.blocks.findBlock(p)
+        //in a block => decrypt
+        if(block != (-1,-1)) {
+            ed.decrypt(p)
+            return new ed.Decryption(block._1, block._2)
+        }
+        val (fst, snd) = if (p < m) (p, m) else (m, p)
+        var isInABlock = false
+        def inBlock() {
+            for (i <- fst to snd) {
+                if (ed.blocks.findBlock(i) != (-1, -1)) {
+                    isInABlock = true; return
+                }
+            }
+        }
+        inBlock()
+        //trying to encrypt range that overlaps with an encrypted block
+        if(isInABlock) {beep(); return null}
+        //encrypt a range
+        else {
             ed.encrypt(fst, snd)
+            return new ed.Encryption(fst, snd)
         }
     }
 

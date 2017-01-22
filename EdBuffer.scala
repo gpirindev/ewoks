@@ -183,11 +183,25 @@ class EdBuffer {
         }
     }
 
-    /** Encrypt a range */
-    def encrypt(from: Int, to: Int): Unit = {
+    /** Encrypt/decrypt a range */
+    def rotifyRange(from: Int, to: Int): Unit = {
         noteDamage(true)
         for(i<- from to to) rotifyChar(i)
         setModified()
+    }
+    /** Encrypt and update blocks
+      * pre: the range [from..to] doesnt include any encrypted symbols*/
+    def encrypt(from: Int, to: Int): Unit = {
+        rotifyRange(from, to)
+        blocks.insert((from, to))
+    }
+
+    /** Decrypt and update blocks
+      * pre: pos is in an encrypted block*/
+    def decrypt(pos: Int): Unit = {
+        var block = blocks.findBlock(pos)
+        rotifyRange(block._1, block._2)
+        blocks.remove(pos)
     }
 
     /** Delete a character */
@@ -195,6 +209,7 @@ class EdBuffer {
         val ch = text.charAt(pos)
         noteDamage(ch == '\n' || getRow(pos) != getRow(point))
         text.deleteChar(pos)
+        blocks.decrement(pos, 1)
 	      timestamp = timestamp + 1
         setModified()
     }
@@ -203,6 +218,7 @@ class EdBuffer {
     def deleteRange(pos: Int, len: Int) {
         noteDamage(true)
         text.deleteRange(pos, len)
+        blocks.decrement(pos, len)
 	      timestamp = timestamp + 1
         setModified()
     }
@@ -211,6 +227,7 @@ class EdBuffer {
     def insert(pos: Int, ch: Char) {
         noteDamage(ch == '\n' || getRow(pos) != getRow(point))
         text.insert(pos, ch)
+        blocks.increment(pos, 1)
 	      timestamp = timestamp + 1
         setModified()
     }
@@ -219,6 +236,7 @@ class EdBuffer {
     def insert(pos: Int, s: String) {
         noteDamage(true)
         text.insert(pos, s)
+        blocks.increment(pos, s.length)
         setModified()
     }
     
@@ -226,6 +244,7 @@ class EdBuffer {
     def insert(pos: Int, s: Text.Immutable) {
         noteDamage(true)
         text.insert(pos, s)
+        blocks.increment(pos, s.length)
         setModified()
     }
     
@@ -233,6 +252,7 @@ class EdBuffer {
     def insert(pos: Int, t: Text) {
         noteDamage(true)
         text.insert(pos, t)
+        blocks.increment(pos, t.length)
         setModified()
     }
 
@@ -407,6 +427,18 @@ class EdBuffer {
                 case _ => false
             }
         }
+    }
+
+    /** Change that records encryption */
+    class Encryption(from: Int, to: Int) extends Change {
+        def undo() { decrypt(from) }
+        def redo() { encrypt(from, to) }
+    }
+
+    /** Change that records decryption */
+    class Decryption(from: Int, to: Int) extends Change {
+        def undo() { encrypt(from, to) }
+        def redo() { decrypt(from) }
     }
     
     /** Change that records transposition */
