@@ -187,6 +187,7 @@ class EdBuffer {
     def rotifyRange(from: Int, to: Int): Unit = {
         noteDamage(true)
         for(i<- from to to) rotifyChar(i)
+        timestamp = timestamp + 1
         setModified()
     }
     /** Encrypt and update blocks
@@ -382,7 +383,7 @@ class EdBuffer {
                 case other: Save => true
                 case other: AmalgInsertion =>
                     if (text.charAt(text.length-1) == '\n'
-                            || other.pos != this.pos + this.text.length || (this.time < lastSave && this.time + this.text.length >= lastSave)) 
+                            || other.pos != this.pos + this.text.length || (this.time < lastSave && this.time + this.text.length >= lastSave))
                         false
                     else {
                         text.insert(text.length, other.text)
@@ -433,12 +434,24 @@ class EdBuffer {
     class Encryption(from: Int, to: Int) extends Change {
         def undo() { decrypt(from) }
         def redo() { encrypt(from, to) }
+        override def amalgamate(change: Change) = {
+            change match {
+                case other: Save => true
+                case _ => false
+            }
+        }
     }
 
     /** Change that records decryption */
     class Decryption(from: Int, to: Int) extends Change {
         def undo() { encrypt(from, to) }
         def redo() { decrypt(from) }
+        override def amalgamate(change: Change) = {
+            change match {
+                case other: Save => true
+                case _ => false
+            }
+        }
     }
     
     /** Change that records transposition */

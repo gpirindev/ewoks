@@ -156,8 +156,8 @@ class Editor extends Undoable[Editor.Action] {
     def encryptCommand(): Change = {
         var p = ed.point
         var m = ed.mark
-        //marker is at end of text => beep
-        if(m == ed.length || p == ed.length) {beep(); return null}
+        //point is at end of text => beep
+        if(p == ed.length) {beep(); return null}
         var block = ed.blocks.findBlock(p)
         //in a block => decrypt
         if(block != (-1,-1)) {
@@ -174,8 +174,8 @@ class Editor extends Undoable[Editor.Action] {
             }
         }
         inBlock()
-        //trying to encrypt range that overlaps with an encrypted block
-        if(isInABlock) {beep(); return null}
+        //trying to encrypt range that overlaps with an encrypted block or the marker is at the end of the text
+        if(isInABlock || m == ed.length) {beep(); return null}
         //encrypt a range
         else {
             ed.encrypt(fst, snd)
